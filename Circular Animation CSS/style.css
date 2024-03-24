@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.lol {
+  width: 400px;
+  height: 400px;
+  margin:100px auto;
+  border: 1px solid teal;
+  position: relative;
+  border-radius: 50%;
+}
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: crimson;
+  animation: orbit 5s linear infinite ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 5;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-200px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-200px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit2 {
+  0% {
+    /* transform: rotate(0deg) translate(-200px) rotate(0deg); */
+    /* transform: rotateZ(0deg); */
+  }
+  100% {
+    /* transform: rotate(360deg) translate(-200px) rotate(-360deg); */
+    /* transform: rotateZ(180deg); */
+  }
+}
